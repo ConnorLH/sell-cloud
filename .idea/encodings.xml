@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sell-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sell-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sell-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sell-order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sell-order/sell-order-client" charset="UTF-8" />

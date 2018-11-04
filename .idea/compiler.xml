@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sell-client" />
+        <module name="sell-config" />
         <module name="sell-eureka" />
         <module name="sell-order-client" />
         <module name="sell-order-common" />

@@ -17,6 +17,7 @@
         <module>sell-eureka</module>
         <module>sell-product</module>
         <module>sell-order</module>
+        <module>sell-config</module>
     </modules>
 
     <properties>
