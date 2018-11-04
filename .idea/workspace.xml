@@ -2,24 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3594ba2-e247-4068-9d65-b895749cb255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sell-config/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sell-config/src/main/java/com/corner/config/SellConfigApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sell-config/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/controller/EnvController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sell-product/sell-product-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/controller/SendMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/MqReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/ProductInfoReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/StreamClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/StreamReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/utils/JsonUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/test/java/com/corner/sellorder/server/MqSenderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/utils/JsonUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sell-order/sell-order-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sell-order/sell-order-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell-order/sell-order-server/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell-product/sell-product-common/target/classes/com/corner/sellproduct/common/dto/DecreaseStockInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/sell-product/sell-product-common/target/classes/com/corner/sellproduct/common/dto/DecreaseStockInput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell-product/sell-product-common/target/classes/com/corner/sellproduct/common/dto/ProductInfoOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/sell-product/sell-product-common/target/classes/com/corner/sellproduct/common/dto/ProductInfoOutput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sell-product/sell-product-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sell-product/sell-product-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell-product/sell-product-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sell-product/sell-product-server/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sell-product/sell-product-server/target/classes/com/corner/sellproduct/server/service/impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/sell-product/sell-product-server/target/classes/com/corner/sellproduct/server/service/impl/ProductServiceImpl.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/sell-eureka/target/" />
@@ -49,32 +45,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="43" />
-          <entry key="xml" value="9" />
-          <entry key="yml" value="8" />
+          <entry key="class" value="7" />
+          <entry key="java" value="57" />
+          <entry key="xml" value="11" />
+          <entry key="yml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="43" />
-          <entry key="XML" value="9" />
-          <entry key="YAML" value="8" />
+          <entry key="CLASS" value="7" />
+          <entry key="JAVA" value="57" />
+          <entry key="XML" value="11" />
+          <entry key="YAML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="320" />
-          <entry key="txt" value="12" />
-          <entry key="xml" value="156" />
-          <entry key="yml" value="291" />
+          <entry key="java" value="2273" />
+          <entry key="txt" value="20" />
+          <entry key="xml" value="198" />
+          <entry key="yml" value="507" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="320" />
-          <entry key="PLAIN_TEXT" value="12" />
-          <entry key="XML" value="156" />
-          <entry key="YAML" value="291" />
+          <entry key="JAVA" value="2273" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="XML" value="198" />
+          <entry key="YAML" value="507" />
         </counts>
       </usages-collector>
     </session>
@@ -82,19 +80,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell-config/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/ProductInfoReceiver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/controller/ClientController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1652">
-              <caret line="62" column="20" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+            <state relative-caret-position="183">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,60 +92,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/controller/EnvController.java">
+        <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/service/impl/ProductServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="219">
+              <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#478#479#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="42" column="66" selection-start-line="40" selection-end-line="43" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/bootstrap.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell-config/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/resources/bootstrap.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -166,6 +108,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -198,7 +141,6 @@
         <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/test/java/com/corner/sellorder/server/repository/OrderMasterRepositoryTest.java" />
         <option value="$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/service/ProductService.java" />
-        <option value="$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/sell-product/sell-product-server/src/test/java/com/corner/sellproduct/server/service/impl/ProductServiceImplTest.java" />
         <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/SellOrderApplication.java" />
         <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/SellOrderApplication.java" />
@@ -207,13 +149,22 @@
         <option value="$PROJECT_DIR$/sell-config/src/main/java/com/corner/config/SellConfigApplication.java" />
         <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/sell-product/sell-product-server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/sell-product/sell-product-server/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/sell-config/pom.xml" />
-        <option value="$PROJECT_DIR$/sell-order/sell-order-server/pom.xml" />
         <option value="$PROJECT_DIR$/sell-product/sell-product-server/pom.xml" />
         <option value="$PROJECT_DIR$/sell-config/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/controller/EnvController.java" />
+        <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/test/java/com/corner/sellorder/server/MqSenderTest.java" />
+        <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/MqReceiver.java" />
+        <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/StreamClient.java" />
+        <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/controller/SendMessageController.java" />
+        <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/StreamReceiver.java" />
+        <option value="$PROJECT_DIR$/sell-order/sell-order-server/pom.xml" />
+        <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/utils/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/utils/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/ProductInfoReceiver.java" />
       </list>
     </option>
   </component>
@@ -246,6 +197,21 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="sell-config" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sell-config" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.cloud:spring-cloud-starter-bus-amqp:2.0.0.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sell-order-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sell-order-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -430,7 +396,21 @@
               <item name="corner" type="462c0819:PsiDirectoryNode" />
               <item name="sellorder" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-order" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-order-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="corner" type="462c0819:PsiDirectoryNode" />
+              <item name="sellorder" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -445,147 +425,6 @@
               <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
               <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
               <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="corner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="corner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="corner" type="462c0819:PsiDirectoryNode" />
-              <item name="sellproduct" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="corner" type="462c0819:PsiDirectoryNode" />
-              <item name="sellproduct" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
-              <item name="sell-product-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="corner" type="462c0819:PsiDirectoryNode" />
-              <item name="sellproduct" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
@@ -670,6 +509,63 @@
               <item name="sell-product-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="corner" type="462c0819:PsiDirectoryNode" />
+              <item name="sellproduct" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="corner" type="462c0819:PsiDirectoryNode" />
+              <item name="sellproduct" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="corner" type="462c0819:PsiDirectoryNode" />
+              <item name="sellproduct" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="corner" type="462c0819:PsiDirectoryNode" />
+              <item name="sellproduct" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sell-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sell-cloud" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-product" type="462c0819:PsiDirectoryNode" />
+              <item name="sell-product-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -699,14 +595,15 @@
       <recent name="com.corner.sellproduct" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.corner.sellproduct.server.utils" />
       <recent name="com.corner.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Develop\sell-cloud\sell-order\sell-order-server\src\main\java\com\corner\sellorder\server\utils" />
       <recent name="F:\Develop\sell-cloud\sell-order\sell-order-server\src\main\resources" />
       <recent name="F:\Develop\sell-cloud\sell-product\sell-product-server\src\main\resources" />
       <recent name="F:\Develop\sell-cloud\sell-order\sell-order-server\src\main\java\com\corner\sellorder\server" />
       <recent name="F:\Develop\sell-cloud\sell-product\sell-product-server\src\main\java\com\corner\sellproduct\server" />
-      <recent name="F:\Develop\sell-cloud\sell-product\sell-product-common\src\main\java\com\corner\sellproduct\common\dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -722,6 +619,22 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.SellOrderApplication">
+    <configuration name="MqSenderTest.sendMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sell-order-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.corner.sellorder.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.corner.sellorder.server" />
+      <option name="MAIN_CLASS_NAME" value="com.corner.sellorder.server.MqSenderTest" />
+      <option name="METHOD_NAME" value="sendMessage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sell-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.corner.eureka.EurekaApplication" />
@@ -769,7 +682,13 @@
       <item itemvalue="Spring Boot.SellProductApplication" />
       <item itemvalue="Spring Boot.SellOrderApplication" />
       <item itemvalue="Spring Boot.SellConfigApplication" />
+      <item itemvalue="JUnit.MqSenderTest.sendMessage" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MqSenderTest.sendMessage" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -781,7 +700,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541309893001</updated>
-      <workItem from="1541309894326" duration="11061000" />
+      <workItem from="1541309894326" duration="24053000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1541313069535</created>
@@ -790,26 +709,40 @@
       <option name="project" value="LOCAL" />
       <updated>1541313069535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成自动刷新配置">
+      <created>1541321265030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541321265030</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="MqSenderTest_sendMessage - 2018.11.04 at 17h 01m 21s.xml">
+      <configuration name="MqSenderTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MqSenderTest_sendMessage - 2018.11.04 at 20h 17m 10s.xml">
+      <configuration name="MqSenderTest.sendMessage" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11061000" />
+    <option name="totallyTimeSpent" value="24053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="JRebel" side_tool="true" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Designer" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3197051" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3197051" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50067025" side_tool="true" weight="0.32892805" />
       <window_info anchor="bottom" id="Messages" weight="0.32991204" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -818,8 +751,8 @@
       <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32892805" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.32892805" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39941263" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -841,28 +774,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
+    <MESSAGE value="完成自动刷新配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成自动刷新配置" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/ProductInfoReceiver.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sell-product/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/dto/CartDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/dto/CartDTO.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -954,30 +881,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/repository/ProductInfoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="15" column="20" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1052,13 +959,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sell-config/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -1066,38 +966,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="42" column="66" selection-start-line="40" selection-end-line="43" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sell-config/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
-          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/controller/ClientController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1652">
-          <caret line="62" column="20" lean-forward="true" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1106,12 +985,212 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/controller/EnvController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
+        <state relative-caret-position="-13">
           <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#452#453#0" expanded="true" />
             <element signature="e#478#479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/MqReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="20" column="107" selection-start-line="20" selection-start-column="107" selection-end-line="20" selection-end-column="107" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/test/java/com/corner/sellorder/server/MqSenderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="17" column="86" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/controller/SendMessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-stream/2.0.1.RELEASE/spring-cloud-stream-2.0.1.RELEASE.jar!/org/springframework/cloud/stream/config/BindingProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-stream/2.0.1.RELEASE/spring-cloud-stream-2.0.1.RELEASE.jar!/org/springframework/cloud/stream/config/BindingServiceProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="57" column="46" lean-forward="true" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+          <folding>
+            <element signature="e#2469#2470#0" expanded="true" />
+            <element signature="e#2509#2510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/StreamClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/StreamReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1471">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/utils/ResultVOUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="69" column="32" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar!/com/fasterxml/jackson/databind/type/CollectionType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-445">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Develop/Java/jdk1.8.0_131/src.zip!/java/lang/reflect/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="491" column="40" selection-start-line="491" selection-start-column="40" selection-end-line="491" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="1140" column="51" selection-start-line="1140" selection-start-column="51" selection-end-line="1140" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar!/com/fasterxml/jackson/core/type/TypeReference.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE.jar!/org/springframework/boot/json/JacksonJsonParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/utils/JsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/utils/JsonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-order/sell-order-server/src/main/java/com/corner/sellorder/server/message/ProductInfoReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sell-product/sell-product-server/src/main/java/com/corner/sellproduct/server/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

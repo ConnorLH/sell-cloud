@@ -7,6 +7,17 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: dev
+    stream:
+      bindings:
+        # 配置接收信道的目的地（从哪个Exchange获取）
+        myMessageInput:
+          destination: myMessageTest
+        # 配置发送信道的目的地（从哪个Exchange接收）
+        myMessageOutput:
+          destination: myMessageTest
+          # 指定发送消息被转换成的这个类型后再发送
+          contentType: application/json
+
 eureka:
   client:
     service-url:
