@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sell-client" />
+        <module name="sell-eureka" />
+        <module name="sell-order-client" />
+        <module name="sell-order-common" />
+        <module name="sell-order-server" />
+        <module name="sell-product-client" />
+        <module name="sell-product-common" />
+        <module name="sell-product-server" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
