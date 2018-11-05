@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="sell-api-gateway" />
         <module name="sell-client" />
         <module name="sell-config" />
         <module name="sell-eureka" />
@@ -15,6 +16,9 @@
         <module name="sell-product-client" />
         <module name="sell-product-common" />
         <module name="sell-product-server" />
+        <module name="sell-user-client" />
+        <module name="sell-user-common" />
+        <module name="sell-user-server" />
       </profile>
     </annotationProcessing>
   </component>

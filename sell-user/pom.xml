@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>sell-cloud</artifactId>
+        <groupId>com.corner</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>sell-user</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>sell-user-common</module>
+        <module>sell-user-client</module>
+        <module>sell-user-server</module>
+    </modules>
+
+    <properties>
+        <user-common.version>0.0.1-SNAPSHOT</user-common.version>
+        <user-client.version>0.0.1-SNAPSHOT</user-client.version>
+    </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.corner</groupId>
+                <artifactId>sell-user-common</artifactId>
+                <version>${user-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.corner</groupId>
+                <artifactId>sell-user-client</artifactId>
+                <version>${user-client.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+</project>

@@ -52,6 +52,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void decreaseStock(List<DecreaseStockInput> decreaseStockInputs) {
+        // 先全部扣完库存再发送消息
         List<ProductInfo> productInfos = decreaseStockProcess(decreaseStockInputs);
         List<ProductInfoOutput> productInfoOutputs = productInfos.stream().map(e -> {
             ProductInfoOutput productInfoOutput = new ProductInfoOutput();

@@ -18,6 +18,8 @@
         <module>sell-product</module>
         <module>sell-order</module>
         <module>sell-config</module>
+        <module>sell-api-gateway</module>
+        <module>sell-user</module>
     </modules>
 
     <properties>
