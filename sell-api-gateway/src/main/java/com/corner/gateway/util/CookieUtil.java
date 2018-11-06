@@ -1,4 +1,4 @@
-package com.corner.user.server.utils;
+package com.corner.gateway.util;
 
 import org.apache.commons.lang.StringUtils;
 

@@ -8,6 +8,9 @@ import org.springframework.stereotype.Component;
 
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.*;
 
+/**
+ * 令牌桶算法限流
+ */
 @Component
 public class RateLimiterFilter extends ZuulFilter {
 
