@@ -29,6 +29,7 @@ public class ProductController {
     private CategoryService categoryService;
 
     @GetMapping("/list")
+    @CrossOrigin
     public ResultVO<List<ProductVO>> list(){
         List<ProductInfo> productInfoList = productService.findUpAll();
         List<Integer> categoryTypeList = productInfoList.stream()
@@ -62,7 +63,7 @@ public class ProductController {
      * @param productIdList
      * @return
      */
-    @PostMapping("/listForOrder")
+    @RequestMapping("/listForOrder")
     public List<ProductInfoOutput> listForOrder(@RequestBody List<String> productIdList){
         return productService.findList(productIdList);
     }

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
+//@FeignClient(name = "product", fallback = ProductClientFallback.class)
 @FeignClient(name = "product")
 public interface ProductClient {
 
